@@ -88,12 +88,12 @@ public:
 
     GainHonorGuard() : PlayerScript("GainHonorGuard") {}
 
-    void OnCreatureKill(Player* player, Creature* killed)  //override
+    void OnPlayerCreatureKill(Player* player, Creature* killed)  //override
     {
         RewardHonor(player, killed);
     }
 
-    void OnCreatureKilledByPet(Player* player, Creature* killed) //override
+    void OnPlayerCreatureKilledByPet(Player* player, Creature* killed) //override
     {
         RewardHonor(player, killed);
     }
